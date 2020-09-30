@@ -13,6 +13,8 @@ $(document).ready(function(){
               $("#temp").text(response.main.temp)
               $("#wind").text(response.wind.speed)
               $("#humid").text(response.main.humidity)
+
+              $("#history").append($("<button>").text(response.name).attr("class", "list-group-item"))
         });
     });
         
