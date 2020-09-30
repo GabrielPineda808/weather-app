@@ -21,18 +21,26 @@
           <div class="col-3">
             <form class="form-inline ml-2">
               <input class="form-control mr-sm-2" type="search" placeholder="Search a City" id="search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0 bg-primary text-light" id="searchBtnt" type="submit">Search</button>
+              <button class="btn btn-outline-success my-2 my-sm-0 bg-primary text-light" id="searchBtn" type="submit">Search</button>
             </form>
             <div class="list-group mt-3 ml-2" id="searchHistory">
             </div>
           </div>
-          
-          <div class="col-8 bg-success mt-3">
-            <div class="card-body" id="cCard">
-                 This is some text within a card body.
+
+          <div class="row">
+            <div class="col-12">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h1><span id="city"></span>(<span id="date"></span>)</h1>
+                        <p>Temperature: <span id="temp"></span> °F</p>
+                        <p>Wind Speed: <span id="wind"></span> MPH</p>
+                        <p>Humidity: <span id="humid"></span>%</p>
+                        <p>UV Index: <span id="uv"></span></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
