@@ -13,7 +13,6 @@ $(document).ready(function(){
               $("#temp").text(response.main.temp)
               $("#wind").text(response.wind.speed)
               $("#humid").text(response.main.humidity)
-
               $("#history").append($("<button>").text(response.name).attr("class", "list-group-item"))
         });
         forecast(searchInput)
@@ -35,7 +34,14 @@ $(document).ready(function(){
             $("#humid2").text(response.list[14].main.humidity);
             $("#humid3").text(response.list[21].main.humidity);
             $("#humid4").text(response.list[29].main.humidity);
-            $("#humid5").text(response.list[38].main.humidity);  
+            $("#humid5").text(response.list[38].main.humidity);
+            
+
+            $("#date1").text(response.list[5].dt_txt)
+            $("#date2").text(response.list[14].dt_txt)
+            $("#date3").text(response.list[21].dt_txt)
+            $("#date4").text(response.list[29].dt_txt)
+            $("#date5").text(response.list[38].dt_txt)
         });
     }
         
