@@ -18,24 +18,39 @@
         </nav>
         <br>
         <div class="row">
-          <div class="col-3">
-            <form class="form-inline ml-2">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search a City" id="search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0 bg-primary text-light" id="searchBtn" type="submit">Search</button>
-            </form>
-            <div class="list-group mt-3 ml-2" id="searchHistory">
+            <div class="col-3">
+                <form class="form-inline ml-2">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search a City" id="search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 bg-primary text-light" id="searchBtn" type="submit">Search</button>
+                </form>
+                <div class="list-group mt-3 ml-2" id="searchHistory">
+                </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col-12">
-                <div class="card mb-5">
-                    <div class="card-body">
-                        <h1><span id="city"></span>(<span id="date"></span>)</h1>
-                        <p>Temperature: <span id="temp"></span> °F</p>
-                        <p>Wind Speed: <span id="wind"></span> MPH</p>
-                        <p>Humidity: <span id="humid"></span>%</p>
-                        <p>UV Index: <span id="uv"></span></p>
+            <div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-5">
+                            <div class="card-body">
+                                <h1><span id="city"></span>(<span id="date"></span>)</h1>
+                                <p>Temperature: <span id="temp"></span> °F</p>
+                                <p>Wind Speed: <span id="wind"></span> MPH</p>
+                                <p>Humidity: <span id="humid"></span>%</p>
+                                <p>UV Index: <span id="uv"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <h1>5-Day Forecast:</h1>
+                <div class="row">
+                    <div class="card text-white bg-primary mx-3 mb-3 " style="width: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title" id="date1"></h5>
+                            <br>
+                            <p class="card-text">Temperature: <span id="temp1"></span>°F</p>
+                            <p class="card-text">Humidity: <span id="humid1"></span>%</p>
+                        </div>
                     </div>
                 </div>
             </div>
